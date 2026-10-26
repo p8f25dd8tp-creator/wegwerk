@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Wegwerk" />
+    <meta name="theme-color" content="#9fd6e8" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="icon-192.png" />
+    <title>Wegwerk</title>
+    <link rel="stylesheet" href="/src/ui/style.css" />
+  </head>
+  <body>
+    <div id="game"></div>
+    <div id="vignette"></div>
+    <div id="hurt"></div>
+    <div id="float"></div>
+    <div id="hud">
+      <div id="top">
+        <div class="pill" id="lives"><span class="ico heart"></span><b>20</b></div>
+        <div class="pill" id="gold"><span class="ico coin"></span><b>100</b></div>
+        <div class="pill" id="wave">Welle <b>1</b></div>
+        <button class="pill round" id="mute" aria-label="Ton an/aus"></button>
+      </div>
+      <div id="banner"></div>
+      <div id="bottom"></div>
+    </div>
+    <div id="loading">
+      <h1>Wegwerk</h1>
+      <div class="bar"><i></i></div>
+      <p>Insel wird gebaut…</p>
+    </div>
+    <div id="fps"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
